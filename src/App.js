@@ -7,6 +7,7 @@ import ReactCardFlip from 'react-card-flip';
 import CardFlip from './Components/CardFlip';
 import Deck from './Components/Deck';
 import ButtonDeck from './Components/ButtonDeck';
+import BasicSpring from './Components/BasicSpring';
 
 function App() {
   // const [isFlipped, setIsFlipped] = React.useState(false);
@@ -18,8 +19,9 @@ function App() {
 
   return (
     <div>
-      <CardFlip />
-      <Deck />
+      {/* <CardFlip />
+      <Deck /> */}
+      <BasicSpring></BasicSpring>
     </div>
   );
 }
