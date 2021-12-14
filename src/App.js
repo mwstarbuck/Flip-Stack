@@ -7,21 +7,17 @@ import ReactCardFlip from 'react-card-flip';
 import CardFlip from './Components/CardFlip';
 import Deck from './Components/Deck';
 import ButtonDeck from './Components/ButtonDeck';
-import BasicSpring from './Components/BasicSpring';
+import BasicTransition from './Components/BasicTransition';
+import Spring from './Components/Spring';
 
 function App() {
-  // const [isFlipped, setIsFlipped] = React.useState(false);
-  // const [mouseOn, setMouseOn] = React.useState(false);
-
-  // const handleFlip = () => {
-  //   setIsFlipped(!isFlipped);
-  // }
 
   return (
     <div>
       {/* <CardFlip />
-      <Deck /> */}
-      <BasicSpring></BasicSpring>
+      <ButtonDeck /> */}
+      {/* <BasicSpring></BasicSpring> */}
+      <Spring></Spring>
     </div>
   );
 }
