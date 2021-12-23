@@ -1,38 +1,68 @@
+html {
+  background-color: rgb(3, 67, 104);
+  /* background-color: #c72c41; */
+  overflow: hidden;
+}
 .App {
   text-align: center;
+  padding: 40px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 40px;
+  margin-top: 200px;
+  min-height: 200px;
+  /* height: 100%; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.deck {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    will-Change: transform;
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    touch-Action: none;
+}
+.card {
+    background-Color: white;
+    background-Size: auto 85%;
+    background-Repeat: no-repeat;
+    background-Position: center center;
+    width: 45vh;
+    max-Width: 150px;
+    height: 85vh;
+    max-Height: 285px;
+    will-Change: transform, opacity;
+    border-Radius: 10px;
+    box-Shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c {
+  position: absolute;
+  /* max-width: 500px;
+  max-height: 500px;
+  width: 350px;
+  height: 200px; */
+  cursor: pointer;
+  will-change: transform, opacity;
 }
